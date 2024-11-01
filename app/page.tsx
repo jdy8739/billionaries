@@ -16,10 +16,10 @@ export default async function Home() {
 
   return (
     <main className="text-gray-300 p-40">
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 min-w-[150px]">
         {list.map((el) => (
           <Link key={el.id} href={`/person/${el.id}`}>
-            <div className="p-3 group">
+            <div className="p-3 group min-w-[50px]">
               <div className="w-full h-44 relative flex items-center justify-center">
                 {el.squareImage === 'https:undefined' ? (
                   <div className="text-slate-400">No Image</div>

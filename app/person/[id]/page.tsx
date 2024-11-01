@@ -44,7 +44,7 @@ const Person = async ({ params }: { params: { id: string } }) => {
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 min-w-[500px]">
       <section className="bg-slate-800 p-3 flex text-slate-200">
         <div className="min-w-60 h-80 relative">
           {person.squareImage !== 'https:undefined' ? (
